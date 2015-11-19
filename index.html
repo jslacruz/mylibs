@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oramon Mobile Menu</title>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/oramon.mobilemenu-1.0.js"></script>
+
+    <link rel="stylesheet" href="css/menu.css" />
+</head>
+<body>
+    <nav id="mobile-menu">
+        <ul class="nav-menu-items">
+            <li><a href="javascript:void(0);">New arrivals</a></li>
+            <li><a href="javascript:void(0);">Sale</a></li>
+            <li><a href="javascript:void(0);">Broeken</a></li>
+            <li><a href="javascript:void(0);">Tops</a></li>
+            <li><a href="javascript:void(0);">Jumpsuits</a></li>
+            <li><a href="javascript:void(0);">Blazers & Jasjes</a></li>
+            <li>
+                <a href="javascript:void(0);">Collection</a>
+                <ul>
+                    <li><a href="javascript:void(0);">Timeless Basics</a></li>
+                    <li><a href="javascript:void(0);">Uptown Glam</a></li>
+                    <li><a href="javascript:void(0);">Our Denim</a></li>
+                    <li><a href="javascript:void(0);">City Chic</a></li>
+                    <li><a href="javascript:void(0);">Rebel Luxe</a></li>
+                    <li><a href="javascript:void(0);">Casual Mix</a></li>
+                </ul>
+            </li>
+            <li class="separator"></li>
+            <li><a href="javascript:void(0);">Blog</a></li>
+            <li><a href="javascript:void(0);">Jobs</a></li>
+            <li><a href="javascript:void(0);">Boutiques</a></li>
+            <li>
+                <a class="dd-link" href="javascript:void(0);">Service</a>
+                <ul class="sub-menu">
+                    <li><a href="javascript:void(0);">Giftcard</a></li>
+                    <li><a href="javascript:void(0);">Bestellen</a></li>
+                    <li><a href="javascript:void(0);">Bezorgen</a></li>
+                    <li><a href="javascript:void(0);">Betalen</a></li>
+                    <li><a href="javascript:void(0);">Ruilen en retourneren</a></li>
+                    <li><a href="javascript:void(0);">Contact</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div id="page">
+        <header>
+            <ul>
+                <li><a class="menu-button" href="javascript:void(0);">Menu</a></li>
+                <li>Search</li>
+                <li><a href="http://www.oramon.nl/" target="_blank">Oramon web page</a></li>
+            </ul>
+        </header>
+        <div id="overlay-mask"></div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#mobile-menu').navMenu({
+                overlay: '#overlay-mask',
+                header: 'header',
+                wrapper: '#page',
+                button: '.menu-button',
+                onOpenSubmenu: function() {
+                    console.log('submenu opened');
+                },
+                onCloseSubmenu: function() {
+                    console.log('submenu closed');
+                },
+                onLoadMenu: function() {
+                    console.log('loaded');
+                },
+                onOpenMenu: function() {
+                    console.log('opened');
+                },
+                onCloseMenu: function() {
+                    console.log('closed');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+$urlBase: "/";
+/* Is relative to .CSS path */
+$imgsBase: #{$urlBase}img;
+
+
+$deepestDepth: -1;
+$deeperDepth: 0;
+$backDepth: 10;
+$overBackDepth: 50;
+$frontDepth: 100;
+$overlayDepth: 200;
+$topFrontDepth: 150;
+
+$darkGrey   : #999999;
+$lightGrey  : #E4E4E4;
+$lighterGrey: #CCCCCC;
+$gold       : #B05829;
+$green      : #6AEAB7;
+$blue       : #40C5B4;
+$white      : #F9F9F9;
+$text       : #333333;
+
+$white        : #FFFFFF;
+$lightestGray : #ECECEC;
+$lighterGray  : #DDDDDD;
+$lightGray    : #BBBBBB;
+$middleGray   : #999999;
+$gray         : #7F7F7F;
+$lessDarkGray : #666666;
+$darkGray     : #444444;
+$darkerGray   : #333333;
+$darkestGray  : #222222;
+$almostBlack  : #141414;
+$black        : #000000;
+
+$borderColor: rgb(238,238,238);
+
+$lightBlue: #84B8D9;
+$bluelink : #006699;
+$facebook : #2c417a;
+
+
+$red    : #CC0133;
+$orange : #fe6514;
+$bronze : #B05829;
+$cyan   : #6aeab7;
+$green  : #65B43D;
+
+$transparent : rgba(255, 255, 255, 0);
